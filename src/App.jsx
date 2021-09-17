@@ -1,4 +1,4 @@
-import logo from "./logo.svg";
+
 import "./App.css";
 
 import colorList from "./colorList";
@@ -29,7 +29,7 @@ function App() {
         />
       </div>
       {colorList.filter((val)=>{
-        if(search == ""){
+        if(search === ""){
           return val;
         }else if(val.name.toLowerCase().includes(search.toLowerCase())){
           return val;
